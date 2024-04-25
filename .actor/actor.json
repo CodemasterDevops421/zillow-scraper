@@ -1,0 +1,52 @@
+{
+	"actorSpecification": 1,
+	"name": "zillow-scraper",
+	"title": "Zillow Scraper",
+	"description": "Scrape real estate data on Zillow with Python",
+	"version": "0.0",
+	"meta": {
+		"templateId": "python-playwright"
+	},
+	"input": "./input_schema.json",
+	"dockerfile": "./Dockerfile",
+	"storages": {
+		"dataset": {
+			"actorSpecification": 1,
+			"title": "Realtor data",
+			"views": {
+				"titles": {
+					"title": "Realtor data",
+					"transformation": {
+						"fields": [
+							"imageUrl",
+							"price",
+							"link",
+							"address"
+						]
+					},
+					"display": {
+						"component": "table",
+						"properties": {
+							"imageUrl": {
+								"label": "Image URL",
+								"format": "text"
+							},
+							"price": {
+								"label": "Price",
+								"format": "text"
+							},
+                            "link": {
+								"label": "Page link",
+								"format": "text"
+							},
+                            "address": {
+								"label": "Address",
+								"format": "text"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

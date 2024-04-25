@@ -1,0 +1,27 @@
+{
+    "title": "Zillow Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "Zillow search results URL",
+            "type": "object",
+            "description": "Zillow search results URL",
+            "prefill":
+                { "url": "https://www.zillow.com/baltimore-md/rentals/" },
+            "default": "https://www.zillow.com/baltimore-md/rentals/",
+            "editor": "json"
+        },
+        "homepage": {
+            "title": "Zillow homepage URL",
+            "type": "object",
+            "description": "Zillow homepage URL",
+            "prefill":
+                { "homepage": "https://www.zillow.com" },
+            "default": "https://www.zillow.com",
+            "editor": "json"
+
+        }
+    },
+    "required": ["url", "homepage"]
+}
