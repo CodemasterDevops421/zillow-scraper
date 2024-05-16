@@ -42,7 +42,7 @@ async def main() -> None:
             Actor.log.info('No URL specified in actor input, exiting...')
             await Actor.exit()
 
-        data: list[dict[str, str | Any]] = []  # Define empty list
+        data: list[dict[str, str | Any]] = []  # Define an empty list
 
         user_agent_strings = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.2227.0 '
